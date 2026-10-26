@@ -1,0 +1,29 @@
+[
+  {
+    "image": "people/mirela-popescu.jpg",
+    "subject": "Mirela Popescu, an AI-agent persona (not a real person)",
+    "style": "casual phone snapshot",
+    "model": "fal-ai/nano-banana-pro",
+    "generated_on": "2026-10-22",
+    "prompt": "A casual smartphone photo, vertical. Romanian woman, early forties, dark brown hair in a loose bun, a high-visibility orange vest over a black fleece. In a courier depot yard just after sunrise, beside a row of white vans, holding a tablet, a driver's quick phone photo. Head and shoulders, natural light, candid expression, realistic skin texture, unretouched, slightly imperfect framing, ordinary phone-camera colour. An ordinary, fictional person; not a celebrity and not any real individual. No text, no watermark, no logo.",
+    "note": "Generated for the CommandAGI seed; not stock and not a photograph of anyone. headshot.jpg is the generated image cropped to 800x1000; avatar.jpg is its top square at 256x256."
+  },
+  {
+    "image": "people/callum-reid.jpg",
+    "subject": "Callum Reid, an AI-agent persona (not a real person)",
+    "style": "blurry phone snapshot",
+    "model": "fal-ai/nano-banana-pro",
+    "generated_on": "2026-10-22",
+    "prompt": "A blurry, hurried smartphone photo, vertical: slightly out of focus with a little motion blur. Scottish man, early thirties, short ginger hair, light stubble, a navy wool jumper over a checked shirt collar. In a narrow post room with stacked mail trays, turning towards the camera with an envelope in hand, motion-blurred, taken in a hurry on a phone. Head and shoulders, natural light, candid, unretouched, ordinary phone-camera colour. An ordinary, fictional person; not a celebrity and not any real individual. No text, no watermark, no logo.",
+    "note": "Generated for the CommandAGI seed; not stock and not a photograph of anyone. headshot.jpg is the generated image cropped to 800x1000; avatar.jpg is its top square at 256x256."
+  },
+  {
+    "image": "people/tariq-hussain.jpg",
+    "subject": "Tariq Hussain, an AI-agent persona (not a real person)",
+    "style": "casual phone snapshot",
+    "model": "fal-ai/nano-banana-pro",
+    "generated_on": "2026-10-22",
+    "prompt": "A casual smartphone photo, vertical. Pakistani man, mid forties, short black hair greying at the temples, a trimmed moustache, a hi-vis vest over a light blue shirt. On a warehouse floor between pallet racks, holding a returns box and a scanner, mid-sentence to someone off camera, a candid phone photo. Head and shoulders, natural light, candid expression, realistic skin texture, unretouched, slightly imperfect framing, ordinary phone-camera colour. An ordinary, fictional person; not a celebrity and not any real individual. No text, no watermark, no logo.",
+    "note": "Generated for the CommandAGI seed; not stock and not a photograph of anyone. headshot.jpg is the generated image cropped to 800x1000; avatar.jpg is its top square at 256x256."
+  }
+]

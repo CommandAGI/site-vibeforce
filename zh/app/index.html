@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>任务控制台 | VibeForce</title>
+<meta name="description" content="VibeForce 任务控制台演示：写下任务，得到范围、候选执行者、托管里程碑和证据包，全部在你的浏览器里。">
+<link rel="canonical" href="https://vibeforce.commandagi.app/zh/app/">
+<link rel="alternate" hreflang="en" href="https://vibeforce.commandagi.app/app/">
+<link rel="alternate" hreflang="es" href="https://vibeforce.commandagi.app/es/app/">
+<link rel="alternate" hreflang="zh-Hans" href="https://vibeforce.commandagi.app/zh/app/">
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../mark.svg" type="image/svg+xml">
+</head>
+<body class="app">
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../../mark.svg" alt="" width="28" height="28">vibeforce</a>
+    <nav class="site-nav" aria-label="站点">
+      <a href="../index.html">首页</a>
+      <a href="index.html" aria-current="page">任务控制台</a>
+      <a href="../index.html#pricing">价格</a>
+      <a href="../about.html">关于</a>
+      <span class="lang" aria-label="语言">
+        <span class="glyph" aria-hidden="true">A/文</span>
+        <a href="../../app/" hreflang="en" lang="en">EN</a>
+        <a href="../../es/app/" hreflang="es" lang="es">ES</a>
+        <a href="index.html" aria-current="true" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <section class="hero" style="padding-bottom:24px">
+    <p class="eyebrow">任务控制台 · 演示</p>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">你写任务，我们定范围，证据换付款。</h1>
+    <p class="lede">像跟同事说话那样写下任务。计划器把它变成一份范围，从示例网络中挑选执行者，把托管款拆成里程碑，然后等待证据。<strong>这份演示是你浏览器里的脚本：不调用模型，不联网，不派出任何人。</strong></p>
+  </section>
+
+  <div class="mc">
+    <div class="panel" aria-labelledby="brief-title">
+      <h2 id="brief-title">任务说明</h2>
+      <label for="company">客户账户</label>
+      <input id="company" name="company" type="text" value="Northwind Robotics" autocomplete="off" spellcheck="false">
+      <label for="brief">要发生什么</label>
+      <textarea id="brief" name="brief"></textarea>
+      <div class="chips" id="chips" aria-label="示例"></div>
+      <div class="row">
+        <div>
+          <label for="city">城市</label>
+          <select id="city"></select>
+        </div>
+        <div>
+          <label for="budget">托管金额（美元）</label>
+          <input id="budget" name="budget" type="number" min="50" step="50" value="900">
+        </div>
+      </div>
+      <div class="btns" style="margin-top:16px">
+        <button class="btn primary" id="plan" type="button">定义任务</button>
+        <button class="btn" id="reset" type="button">重置</button>
+      </div>
+      <p class="small muted" id="form-note" style="margin-top:12px"></p>
+    </div>
+
+    <div class="panel">
+      <div class="tabs" role="tablist" aria-label="视图">
+        <button role="tab" id="tab-plan" aria-controls="view" aria-selected="true" type="button">任务</button>
+        <button role="tab" id="tab-pipe" aria-controls="view" aria-selected="false" type="button">管道</button>
+        <button role="tab" id="tab-acc" aria-controls="view" aria-selected="false" type="button">账户</button>
+      </div>
+      <div id="view" role="tabpanel"></div>
+    </div>
+  </div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../../app/app.js"></script>
+</body>
+</html>

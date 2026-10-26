@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Mission control | VibeForce</title>
+<meta name="description" content="VibeForce mission control demo: brief a mission, get a scoped plan, a shortlist of operators, escrow milestones and an evidence pack, in your browser.">
+<link rel="canonical" href="https://vibeforce.commandagi.app/app/">
+<link rel="alternate" hreflang="en" href="https://vibeforce.commandagi.app/app/">
+<link rel="alternate" hreflang="es" href="https://vibeforce.commandagi.app/es/app/">
+<link rel="alternate" hreflang="zh-Hans" href="https://vibeforce.commandagi.app/zh/app/">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../mark.svg" type="image/svg+xml">
+</head>
+<body class="app">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../mark.svg" alt="" width="28" height="28">vibeforce</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="../index.html">Home</a>
+      <a href="index.html" aria-current="page">Mission control</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="../about.html">About</a>
+      <span class="lang" aria-label="Language">
+        <span class="glyph" aria-hidden="true">A/文</span>
+        <a href="index.html" aria-current="true" hreflang="en" lang="en">EN</a>
+        <a href="../es/app/" hreflang="es" lang="es">ES</a>
+        <a href="../zh/app/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <section class="hero" style="padding-bottom:24px">
+    <p class="eyebrow">Mission control · demo</p>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Brief it. We scope it. Proof pays.</h1>
+    <p class="lede">Write a mission the way you would say it to a colleague. The planner turns it into a scope, picks operators from a sample network, funds escrow in milestones and waits for evidence. <strong>This demo is a script in your browser: no model call, no network, nothing dispatched.</strong></p>
+  </section>
+
+  <div class="mc">
+    <div class="panel" aria-labelledby="brief-title">
+      <h2 id="brief-title">The brief</h2>
+      <label for="company">Company</label>
+      <input id="company" name="company" type="text" value="Northwind Robotics" autocomplete="off" spellcheck="false">
+      <label for="brief">What has to happen</label>
+      <textarea id="brief" name="brief" placeholder="A supplier in Shenzhen says they can make our enclosure. We need someone on site this week to watch a run, check three samples against our drawing, and photograph the packing line."></textarea>
+      <div class="chips" id="chips" aria-label="Examples"></div>
+      <div class="row">
+        <div>
+          <label for="city">City</label>
+          <select id="city"></select>
+        </div>
+        <div>
+          <label for="budget">Escrow budget (USD)</label>
+          <input id="budget" name="budget" type="number" min="50" step="50" value="900">
+        </div>
+      </div>
+      <div class="btns" style="margin-top:16px">
+        <button class="btn primary" id="plan" type="button">Scope the mission</button>
+        <button class="btn" id="reset" type="button">Reset demo</button>
+      </div>
+      <p class="small muted" id="form-note" style="margin-top:12px"></p>
+    </div>
+
+    <div class="panel">
+      <div class="tabs" role="tablist" aria-label="Views">
+        <button role="tab" id="tab-plan" aria-controls="view" aria-selected="true" type="button">Mission</button>
+        <button role="tab" id="tab-pipe" aria-controls="view" aria-selected="false" type="button">Pipeline</button>
+        <button role="tab" id="tab-acc" aria-controls="view" aria-selected="false" type="button">Accounts</button>
+      </div>
+      <div id="view" role="tabpanel"></div>
+    </div>
+  </div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
