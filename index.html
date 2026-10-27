@@ -2,184 +2,260 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>VibeForce: the field force for teams that ship</title>
 <meta name="description" content="VibeForce is the global field ops network for teams that ship. Brief a mission, a vetted operator executes it with photo, GPS and timestamp evidence, and escrow pays when the evidence is accepted.">
+<meta name="theme-color" content="#14372e">
 <link rel="canonical" href="https://vibeforce.commandagi.app/">
 <link rel="alternate" hreflang="en" href="https://vibeforce.commandagi.app/">
 <link rel="alternate" hreflang="es" href="https://vibeforce.commandagi.app/es/">
 <link rel="alternate" hreflang="zh-Hans" href="https://vibeforce.commandagi.app/zh/">
+<meta property="og:title" content="VibeForce: the field force for teams that ship">
+<meta property="og:description" content="Brief a mission. A vetted operator does it. Escrow pays on accepted evidence.">
+<meta property="og:image" content="https://vibeforce.commandagi.app/og.png">
+<meta property="og:url" content="https://vibeforce.commandagi.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="media/yard.webp" as="image" fetchpriority="high">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="touch-icon.png">
+<script src="home.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
-<header class="site-head">
-  <div class="wrap">
-    <a class="brand" href="index.html"><img src="mark.svg" alt="" width="28" height="28">vibeforce</a>
-    <nav class="site-nav" aria-label="Site">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="app/">Mission control</a>
-      <a href="#pricing">Pricing</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <span class="lang" aria-label="Language">
-        <span class="glyph" aria-hidden="true">A/文</span>
-        <a href="index.html" aria-current="true" hreflang="en" lang="en">EN</a>
-        <a href="es/" hreflang="es" lang="es">ES</a>
-        <a href="zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
-      </span>
-    </nav>
-  </div>
+<header class="strip">
+  <a class="brand" href="index.html"><span class="wm" role="img" aria-label="VibeForce, home"></span></a>
+  <nav class="bays" aria-label="Site">
+    <a href="index.html" aria-current="page"><b>01</b>Home</a>
+    <a href="app/"><b>02</b>Mission control</a>
+    <a href="#pricing"><b>03</b>Pricing</a>
+    <a href="about.html"><b>04</b>About</a>
+    <a href="team.html"><b>05</b>Team</a>
+  </nav>
+  <nav class="plate" aria-label="Language">
+    <a href="index.html" aria-current="true" hreflang="en" lang="en">EN</a>
+    <a href="es/" hreflang="es" lang="es">ES</a>
+    <a href="zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+  </nav>
 </header>
 
 <main id="main">
-  <div class="wrap">
-    <section class="hero">
-      <p class="eyebrow">VibeForce · a company of CommandAGI</p>
-      <h1>Deploy anywhere.<span class="thin">Boots on the ground, by the hour.</span></h1>
-      <p class="lede">VibeForce is the global field ops network for teams that ship. Brief a mission in plain words. VibeForce scopes it, matches a vetted operator near the site, and follows it to proof: photos, GPS and timestamps in one record. Escrow pays when you accept the evidence.</p>
+  <section class="hero-bay" aria-labelledby="hero-title">
+    <div class="hero-type">
+      <p class="bayno">VibeForce · a company of CommandAGI</p>
+      <h1 id="hero-title" class="mega">Deploy <span class="tape">anywhere.</span></h1>
+      <p class="sub">Boots on the ground, by the hour.</p>
+      <p class="lede">Brief a mission in plain words. A vetted operator near the site does it. Escrow pays when you accept the evidence.</p>
       <div class="btns">
         <a class="btn primary" href="app/">Brief a mission</a>
-        <a class="btn" href="#how">How it works</a>
+        <a class="btn" href="#dispatch">Dispatch a sample job</a>
       </div>
-      <p class="notice"><strong>The demo runs in your browser.</strong> Mission control on this site is a working demo on a sample operator network: a scripted planner, not a model call, and the page sends nothing. Nothing you type leaves your device.</p>
-    </section>
+      <p class="notice"><strong>Demo on this site.</strong> Mission control runs in your browser on a sample network: a scripted planner, no model call. Nothing you type leaves your device.</p>
+    </div>
+    <figure class="hero-clip" style="margin:0">
+      <video data-clip="yard" muted loop playsinline preload="none" poster="media/yard.webp" aria-label="Generated footage: a field operator in a hi-vis vest crosses a concrete yard, seen from above">
+        <source data-src="media/yard.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+        <source data-src="media/yard.mp4" type="video/mp4">
+      </video>
+      <span class="mark-tl">Bay 01 · Yard</span>
+      <figcaption class="clip-cap gen">Generated footage. Not a real mission.</figcaption>
+    </figure>
+  </section>
 
-    <section id="how" aria-labelledby="how-title">
-      <div class="section-head">
-        <h2 id="how-title">From brief to proof in hours</h2>
-        <p class="muted">A mission is a small, well-scoped piece of work in the physical world: a site visit, a supplier check, a delivery, a demo, an event setup.</p>
+  <section id="dispatch" class="dispatch bay on-forest" aria-labelledby="dispatch-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Bay 02 · The manifest</p>
+          <h2 id="dispatch-title">Dispatch a sample job</h2>
+        </div>
+        <p>A mission is seven lines a client can check and an operator can finish. Pick a job and dispatch it.</p>
       </div>
-      <ol class="steps">
-        <li><span class="n">01</span><span><strong>Brief</strong><span class="body">Say what has to happen, where and by when. The planner writes the objective, the deliverables and the acceptance criteria you will check.</span></span></li>
-        <li><span class="n">02</span><span><strong>Match</strong><span class="body">VibeForce shortlists operators by city, skill and record, with the reason for each pick. You see the rate and the escrow before anyone moves.</span></span></li>
-        <li><span class="n">03</span><span><strong>Execute</strong><span class="body">The operator works the mission and posts photos, GPS and notes as they go. You watch the timeline, not a chat thread.</span></span></li>
-        <li><span class="n">04</span><span><strong>Evidence pack</strong><span class="body">The mission closes with one pack: each deliverable, its evidence, the time it was captured and who captured it.</span></span></li>
-        <li><span class="n">05</span><span><strong>Debrief and pay</strong><span class="body">You accept the pack, or return one item with a reason. Escrow releases the milestones that were accepted, and the operator's record grows.</span></span></li>
-      </ol>
-    </section>
+      <div class="desk">
+        <div>
+          <fieldset class="jobs">
+            <legend>Choose a job</legend>
+            <label class="job"><input type="radio" name="job" value="supplier" checked><span><b>Supplier check</b><span>Shenzhen · this week</span></span></label>
+            <label class="job"><input type="radio" name="job" value="popup"><span><b>Pop-up setup</b><span>Osaka · Saturday</span></span></label>
+            <label class="job"><input type="radio" name="job" value="delivery"><span><b>Prototype hand-off</b><span>Berlin · tomorrow</span></span></label>
+          </fieldset>
+          <button class="btn primary" id="go" type="button" hidden>Dispatch</button>
+        </div>
+        <article class="manifest" aria-labelledby="mf-title">
+          <header>
+            <h3 id="mf-title">Mission manifest</h3>
+            <span class="no" id="mf-no">VF-S-0141</span>
+            <span class="tagline illus" style="margin:0">Illustrative · sample data</span>
+          </header>
+          <ol id="mf">
+            <li data-k="objective"><span>Objective</span><output>Watch one production run of the enclosure and check three samples against drawing rev C.</output></li>
+            <li data-k="place"><span>Place</span><output>Supplier’s factory, Shenzhen · this week</output></li>
+            <li data-k="skills"><span>Skills</span><output><span class="chips-out"><i>Mandarin</i><i>Calipers and gauges</i><i>Factory visits</i></span></output></li>
+            <li data-k="acceptance"><span>Acceptance</span><output>Three samples within ±0.2 mm, or each miss photographed with the gauge in frame.</output></li>
+            <li data-k="operator"><span>Operator</span><output>Lin W. · Lead Operator · fictional sample</output></li>
+            <li data-k="evidence"><span>Evidence</span><output><ul class="ev"><li><i>□</i>Photo, GPS and time for each sample</li><li><i>□</i>60 s video of the packing line</li><li><i>□</i>Signed visit log</li></ul></output></li>
+            <li data-k="approval" class="pending"><span>Approval</span><output>Waiting for dispatch</output></li>
+          </ol>
+          <footer><span>Nothing is sent. No operator is contacted, no money moves.</span><a href="app/">Scope your own in mission control →</a></footer>
+          <p class="sr" id="mf-live" aria-live="polite"></p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <section aria-labelledby="force-title">
-      <div class="section-head">
-        <h2 id="force-title">A sales force and a CRM, for work that is not in a browser</h2>
-        <p class="muted">Most of a deal happens off screen: the visit, the sample, the handshake, the delivery. VibeForce puts that work in the same pipeline as the account.</p>
-      </div>
-      <div class="grid three">
-        <div class="card"><span class="num">accounts</span><h3>One pipeline per account</h3><p>Every company you work with has its contacts, its missions and its value, in one place. A mission moves the account, and an account's history is its missions.</p></div>
-        <div class="card"><span class="num">dispatch</span><h3>A force, not a jobs board</h3><p>Operators are ranked and paid by a record you can read: missions completed, evidence accepted, rating. The ladder is public, so a first mission and a tenth look different.</p></div>
-        <div class="card"><span class="num">escrow</span><h3>Money waits for proof</h3><p>Escrow is funded before the operator starts. Each milestone releases on an accepted piece of evidence, and a dispute freezes it with the record attached.</p></div>
-        <div class="card"><span class="num">records</span><h3>Every step recorded</h3><p>The brief, the picks, the plan, the captures and the payout are one record. Nothing is retyped into a second system, and a claim without evidence stays open.</p></div>
-        <div class="card"><span class="num">trust</span><h3>Vetted before the first mission</h3><p>Identity, work rights and the skills a mission needs are checked before an operator takes work in that city. A lapsed check pauses their missions.</p></div>
-        <div class="card"><span class="num">anywhere</span><h3>Where your team is not</h3><p>50+ cities, one way to brief, one way to accept. A team of five runs a site visit in Osaka and a supplier check in Shenzhen in the same week.</p></div>
-      </div>
-    </section>
+  <section class="full" aria-labelledby="proof-title">
+    <video data-clip="proof" muted loop playsinline preload="none" poster="media/proof.webp" aria-label="Generated footage: gloved hands photograph a wrapped pallet with a phone">
+      <source data-src="media/proof.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+      <source data-src="media/proof.mp4" type="video/mp4">
+    </video>
+    <div class="over">
+      <p class="bayno" style="color:var(--lime)">Bay 03 · Escrow</p>
+      <h2 id="proof-title">Money waits for <em>proof.</em></h2>
+      <ul class="facts"><li>Photo</li><li>GPS</li><li>Timestamp</li><li>Accepted by you</li></ul>
+      <p class="lead">Escrow is funded before the operator starts. Each milestone releases on one accepted piece of evidence.</p>
+    </div>
+    <span class="clip-cap gen">Generated footage. Not a real mission.</span>
+  </section>
 
-    <section aria-labelledby="ladder-title">
-      <div class="section-head">
-        <h2 id="ladder-title">The operator ladder</h2>
-        <p class="muted">Ranks follow accepted evidence, not time served. The commission at each rank is set per market at launch.</p>
+  <section id="how" class="bay" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Bay 04 · The route</p>
+          <h2 id="how-title">Brief to proof in hours</h2>
+        </div>
+        <p>A mission is small, well-scoped work in the physical world: a site visit, a supplier check, a delivery, a demo, an event setup.</p>
       </div>
-      <div class="grid two">
-        <div class="card"><h3>Candidate</h3><p>First missions, closest oversight. Every capture is reviewed before the mission closes.</p></div>
-        <div class="card"><h3>Operator</h3><p>Standard missions with a baseline service level. Evidence is reviewed on return, not live.</p></div>
-        <div class="card"><h3>Lead Operator</h3><p>Complex missions, and coordination of a second operator on the same site.</p></div>
-        <div class="card"><h3>Field Captain</h3><p>Multi-site missions, client-facing work, and the training of new candidates in a city.</p></div>
-      </div>
-    </section>
+      <div class="route-box"><span class="line" aria-hidden="true"></span>
+      <ol class="route">
+        <li><span class="stop" aria-hidden="true">1</span><h3>Brief</h3><p>Say what, where and by when. The planner writes the objective, the deliverables and your acceptance criteria.</p></li>
+        <li><span class="stop" aria-hidden="true">2</span><h3>Match</h3><p>A shortlist by city, skill and record, with the reason for each pick. Rate and escrow shown first.</p></li>
+        <li><span class="stop" aria-hidden="true">3</span><h3>Execute</h3><p>The operator posts photos, GPS and notes as they go. You watch a timeline, not a chat.</p></li>
+        <li><span class="stop" aria-hidden="true">4</span><h3>Evidence</h3><p>One pack: each deliverable, its evidence, when it was captured and by whom.</p></li>
+        <li><span class="stop" aria-hidden="true">5</span><h3>Pay</h3><p>Accept the pack or return one item with a reason. Escrow releases what you accepted.</p></li>
+      </ol></div>
+    </div>
+  </section>
 
-    <section id="pricing" aria-labelledby="pricing-title">
-      <div class="section-head">
-        <h2 id="pricing-title">Plans</h2>
-        <p class="muted">A plan covers the platform: briefs, matching, evidence and escrow. The operator's rate for each mission is shown before you confirm it.</p>
+  <section class="bay" aria-labelledby="force-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Bay 05 · The rail</p>
+          <h2 id="force-title">A sales force for work off screen</h2>
+        </div>
+        <p>The visit, the sample, the handshake, the delivery: VibeForce puts that work in the same pipeline as the account.</p>
       </div>
-      <div class="plans">
+      <div class="rail">
+        <article class="tag-card"><p class="code"><span>ACC-01</span><span>Accounts</span></p><h3>One pipeline per account</h3><p>Contacts, missions and value in one place. An account’s history is its missions.</p></article>
+        <article class="tag-card hot"><p class="code"><span>DSP-02</span><span>Dispatch</span></p><h3>A force, not a jobs board</h3><p>Operators ranked by a record you can read: missions done, evidence accepted.</p></article>
+        <article class="tag-card"><p class="code"><span>ESC-03</span><span>Escrow</span></p><h3>Money waits for proof</h3><p>Funded before the start. A dispute freezes it with the record attached.</p></article>
+        <article class="tag-card"><p class="code"><span>REC-04</span><span>Records</span></p><h3>Every step recorded</h3><p>Brief, picks, plan, captures, payout: one record. A claim without evidence stays open.</p></article>
+        <article class="tag-card"><p class="code"><span>TRS-05</span><span>Trust</span></p><h3>Vetted before mission one</h3><p>Identity, work rights and skills checked per city. A lapsed check pauses missions.</p></article>
+        <article class="tag-card"><p class="code"><span>ANY-06</span><span>Anywhere</span></p><h3>Where your team is not</h3><p>One way to brief, one way to accept: Osaka on Monday, Shenzhen on Thursday.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bay" aria-labelledby="ladder-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Bay 06 · The ladder</p>
+          <h2 id="ladder-title">Ranks follow evidence</h2>
+        </div>
+        <p>Not time served. The commission at each rank is set per market at launch.</p>
+      </div>
+      <div class="ladder">
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/></svg><h3>Candidate</h3><p>First missions. Every capture reviewed before the mission closes.</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/></svg><h3>Operator</h3><p>Standard missions, a baseline service level, evidence reviewed on return.</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/><path d="M4 82 44 58l40 24v14L44 72 4 96z" fill="#14372e"/></svg><h3>Lead Operator</h3><p>Complex missions, and a second operator on the same site.</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><rect x="0" y="0" width="88" height="96" fill="#dcfa43"/><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/><path d="M4 82 44 58l40 24v14L44 72 4 96z" fill="#14372e"/></svg><h3>Field Captain</h3><p>Multi-site, client-facing work, and training new candidates in a city.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="full" aria-labelledby="where-title">
+    <video data-clip="route" muted loop playsinline preload="none" poster="media/route.webp" aria-label="Generated footage: an unmarked van with open doors at a wet crossroads at dusk">
+      <source data-src="media/route.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+      <source data-src="media/route.mp4" type="video/mp4">
+    </video>
+    <div class="over">
+      <p class="bayno" style="color:var(--lime)">Bay 07 · Anywhere</p>
+      <h2 id="where-title">Where your team is <em>not.</em></h2>
+      <ul class="facts"><li>50+ cities</li><li>One way to brief</li><li>One way to accept</li></ul>
+    </div>
+    <span class="clip-cap gen">Generated footage. Not a real mission.</span>
+  </section>
+
+  <section id="pricing" class="bay" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Bay 08 · Tariff</p>
+          <h2 id="pricing-title">Plans</h2>
+        </div>
+        <p>A plan covers the platform: briefs, matching, evidence and escrow. Each mission’s operator rate is shown before you confirm.</p>
+      </div>
+      <div class="tariff">
         <div class="plan">
-          <h3>Launch</h3>
+          <h3><span>Launch</span><span>T-1</span></h3>
           <p class="price">$99</p>
           <p class="per">per month</p>
-          <ul>
-            <li>5 missions a month</li>
-            <li>Operator-tier matching</li>
-            <li>Standard evidence packs</li>
-            <li>Best-effort service level</li>
-          </ul>
+          <ul><li>5 missions a month</li><li>Operator-tier matching</li><li>Standard evidence packs</li><li>Best-effort service level</li></ul>
           <a class="btn" href="app/">Start</a>
         </div>
         <div class="plan featured">
-          <h3>Growth</h3>
+          <h3><span>Growth</span><span>T-2</span></h3>
           <p class="price">$349</p>
           <p class="per">per month</p>
-          <ul>
-            <li>25 missions a month</li>
-            <li>Up to Lead Operator matching</li>
-            <li>Enhanced evidence packs</li>
-            <li>24-hour response</li>
-            <li>API access</li>
-          </ul>
+          <ul><li>25 missions a month</li><li>Up to Lead Operator matching</li><li>Enhanced evidence packs</li><li>24-hour response</li><li>API access</li></ul>
           <a class="btn primary" href="app/">Start</a>
         </div>
         <div class="plan">
-          <h3>Platinum</h3>
-          <p class="price">Talk to us</p>
+          <h3><span>Platinum</span><span>T-3</span></h3>
+          <p class="price words">Talk to us</p>
           <p class="per">annual, by agreement</p>
-          <ul>
-            <li>Unlimited missions</li>
-            <li>Field Captain coverage</li>
-            <li>Custom integrations</li>
-            <li>A named success manager</li>
-          </ul>
+          <ul><li>Unlimited missions</li><li>Field Captain coverage</li><li>Custom integrations</li><li>A named success manager</li></ul>
           <a class="btn" href="mailto:hello@vibeforce.pro?subject=VibeForce%20Platinum">Contact sales</a>
         </div>
       </div>
-      <p class="small muted" style="margin-top:16px">Prices are the owner's and change with notice. A mission's own cost is quoted before you confirm it, and escrow is funded then.</p>
-    </section>
+      <p class="fineprint muted">Prices are the owner’s and change with notice. A mission’s own cost is quoted before you confirm it, and escrow is funded then.</p>
+    </div>
+  </section>
 
-    <section aria-labelledby="faq-title">
-      <h2 id="faq-title">Questions</h2>
-      <details><summary>Is the demo on this site real?</summary><p>It is a working demo, not a live account. The planner is a script in your browser: it reads your brief, picks from a sample operator network and builds the mission, the plan and the pipeline. It makes no model call and sends no data. Nothing is dispatched, and no money moves.</p></details>
-      <details><summary>Who are the operators?</summary><p>Vetted people who take missions in their own city, and the AI agents that support them. The sample operators in the demo are fictional; their names, ratings and records are made up for the demo.</p></details>
-      <details><summary>What counts as evidence?</summary><p>A photo with a GPS coordinate and a timestamp, a signed receipt, a document, or a short video, attached to one deliverable. The pack lists every deliverable and what was accepted for it.</p></details>
-      <details><summary>What if an item is wrong?</summary><p>You return that item with a reason. The mission stays in review until it is redone or the dispute is opened; escrow releases nothing for an item that is not accepted.</p></details>
-      <details><summary>Does VibeForce do the legal or safety checks for a site?</summary><p>No. Working rights, site access, permits and safety rules for a site are the client's and the operator's to keep. VibeForce checks an operator's identity and skills before their first mission, and records what was checked.</p></details>
-    </section>
-  </div>
-</main>
-
-<footer class="site-foot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="index.html"><img src="mark.svg" alt="" width="24" height="24">vibeforce</a>
-        <p class="small" style="margin-top:10px">Global field ops for teams that ship.</p>
+  <section class="bay" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Bay 09 · Field notes</p>
+          <h2 id="faq-title">Questions</h2>
+        </div>
       </div>
-      <div>
-        <h4>Product</h4>
-        <ul>
-          <li><a href="app/">Mission control</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:hello@vibeforce.pro">hello@vibeforce.pro</a></li>
-          <li><a href="https://vibeforce.pro/">vibeforce.pro</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Language</h4>
-        <ul>
-          <li><a href="index.html" hreflang="en" aria-current="true">English</a></li>
-          <li><a href="es/" hreflang="es">Español</a></li>
-          <li><a href="zh/" hreflang="zh-Hans">简体中文</a></li>
-        </ul>
+      <div class="notes">
+        <details><summary>Is the demo on this site real?</summary><p>It is a working demo, not a live account. The planner is a script in your browser: it reads your brief, picks from a sample operator network and builds the mission, the plan and the pipeline. It makes no model call and sends no data. Nothing is dispatched, and no money moves.</p></details>
+        <details><summary>Who are the operators?</summary><p>Vetted people who take missions in their own city, and the AI agents that support them. The sample operators in the demo and in the manifest above are fictional; their names, ratings and records are made up.</p></details>
+        <details><summary>What counts as evidence?</summary><p>A photo with a GPS coordinate and a timestamp, a signed receipt, a document, or a short video, attached to one deliverable. The pack lists every deliverable and what was accepted for it.</p></details>
+        <details><summary>What if an item is wrong?</summary><p>You return that item with a reason. The mission stays in review until it is redone or the dispute is opened; escrow releases nothing for an item that is not accepted.</p></details>
+        <details><summary>Does VibeForce do the legal or safety checks for a site?</summary><p>No. Working rights, site access, permits and safety rules for a site are the client’s and the operator’s to keep. VibeForce checks an operator’s identity and skills before their first mission, and records what was checked.</p></details>
+        <details><summary>Is the footage on this page real?</summary><p>No. The three clips are generated images and motion (fal), made for this site. They show no real operator, client, place or mission.</p></details>
       </div>
     </div>
-    <p class="fine">VibeForce is a company of <a href="https://commandagi.com/">CommandAGI</a> and runs on its site hosting and records. The operators, missions, prices and ratings on the demo pages are fictional. © 2026 VibeForce.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="haz"></div>
+  <div class="big" aria-hidden="true"><span class="wm"></span></div>
+  <div class="cols">
+    <div><h2>VibeForce</h2><p>Global field ops for teams that ship.</p></div>
+    <div><h2>Product</h2><ul><li><a href="app/">Mission control</a></li><li><a href="#pricing">Pricing</a></li><li><a href="about.html">About</a></li><li><a href="team.html">Team</a></li></ul></div>
+    <div><h2>Contact</h2><ul><li><a href="mailto:hello@vibeforce.pro">hello@vibeforce.pro</a></li><li><a href="https://vibeforce.pro/">vibeforce.pro</a></li></ul></div>
+    <div><h2>Language</h2><ul><li><a href="index.html" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="es/" hreflang="es" lang="es">Español</a></li><li><a href="zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li></ul></div>
   </div>
+  <p class="fine">VibeForce is a company of <a href="https://commandagi.com/">CommandAGI</a> and runs on its site hosting and records. The operators, missions, prices and ratings on the demo pages are fictional. The footage is generated. © 2026 VibeForce.</p>
 </footer>
 </body>
 </html>

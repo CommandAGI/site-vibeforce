@@ -2,35 +2,39 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>任务控制台 | VibeForce</title>
 <meta name="description" content="VibeForce 任务控制台演示：写下任务，得到范围、候选执行者、托管里程碑和证据包，全部在你的浏览器里。">
 <link rel="canonical" href="https://vibeforce.commandagi.app/zh/app/">
 <link rel="alternate" hreflang="en" href="https://vibeforce.commandagi.app/app/">
 <link rel="alternate" hreflang="es" href="https://vibeforce.commandagi.app/es/app/">
 <link rel="alternate" hreflang="zh-Hans" href="https://vibeforce.commandagi.app/zh/app/">
+<meta name="theme-color" content="#14372e">
+<link rel="preload" href="../../fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../style.css">
 <link rel="icon" href="../../mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../touch-icon.png">
+<meta property="og:image" content="https://vibeforce.commandagi.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="app">
 <a class="skip" href="#main">跳到正文</a>
-<header class="site-head">
-  <div class="wrap">
-    <a class="brand" href="../index.html"><img src="../../mark.svg" alt="" width="28" height="28">vibeforce</a>
-    <nav class="site-nav" aria-label="站点">
-      <a href="../index.html">首页</a>
-      <a href="index.html" aria-current="page">任务控制台</a>
-      <a href="../index.html#pricing">价格</a>
-      <a href="../about.html">关于</a>
-      <span class="lang" aria-label="语言">
-        <span class="glyph" aria-hidden="true">A/文</span>
-        <a href="../../app/" hreflang="en" lang="en">EN</a>
-        <a href="../../es/app/" hreflang="es" lang="es">ES</a>
-        <a href="index.html" aria-current="true" hreflang="zh-Hans" lang="zh-Hans">中文</a>
-      </span>
-    </nav>
-  </div>
+<header class="strip">
+  <a class="brand" href="../../zh/index.html"><span class="wm" role="img" aria-label="VibeForce 首页"></span></a>
+  <nav class="bays" aria-label="站点">
+    <a href="../../zh/index.html"><b>01</b>首页</a>
+    <a href="../../zh/app/" aria-current="page"><b>02</b>任务控制台</a>
+    <a href="../../zh/index.html#pricing"><b>03</b>价格</a>
+    <a href="../../zh/about.html"><b>04</b>关于</a>
+    <a href="../../team.html"><b>05</b>团队</a>
+  </nav>
+  <nav class="plate" aria-label="语言">
+    <a href="../../app/" hreflang="en" lang="en">EN</a>
+    <a href="../../es/app/" hreflang="es" lang="es">ES</a>
+    <a href="../../zh/app/" aria-current="true" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+  </nav>
 </header>
 
 <main id="main" class="wrap">
@@ -78,5 +82,16 @@
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="../../app/app.js"></script>
+<footer class="foot">
+  <div class="haz"></div>
+  <div class="big" aria-hidden="true"><span class="wm"></span></div>
+  <div class="cols">
+    <div><h2>VibeForce</h2><p>为交付型团队而生的全球现场运维。</p></div>
+    <div><h2>产品</h2><ul><li><a href="../../zh/app/">任务控制台</a></li><li><a href="../../zh/index.html#pricing">价格</a></li><li><a href="../../zh/about.html">关于</a></li><li><a href="../../team.html">团队</a></li></ul></div>
+    <div><h2>联系</h2><ul><li><a href="mailto:hello@vibeforce.pro">hello@vibeforce.pro</a></li><li><a href="https://vibeforce.pro/">vibeforce.pro</a></li></ul></div>
+    <div><h2>语言</h2><ul><li><a href="../../app/" hreflang="en" lang="en">English</a></li><li><a href="../../es/app/" hreflang="es" lang="es">Español</a></li><li><a href="../../zh/app/" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a></li></ul></div>
+  </div>
+  <p class="fine">VibeForce 是 <a href="https://commandagi.com/">CommandAGI</a> 旗下公司，运行在其站点托管和记录之上。演示页面上的执行者、任务、价格和评分均为虚构。视频画面为生成内容。© 2026 VibeForce。</p>
+</footer>
 </body>
 </html>

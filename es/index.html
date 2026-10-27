@@ -2,183 +2,260 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>VibeForce: la fuerza de campo para equipos que entregan</title>
-<meta name="description" content="VibeForce es la red global de operaciones de campo para equipos que entregan. Describe una misión, un operador verificado la ejecuta con fotos, GPS y hora, y el depósito en garantía paga cuando aceptas la evidencia.">
+<meta name="description" content="VibeForce es la red global de operaciones de campo para equipos que entregan. Describe una misión, un operador verificado la ejecuta con evidencia de foto, GPS y hora, y el depósito en garantía paga cuando se acepta la evidencia.">
+<meta name="theme-color" content="#14372e">
 <link rel="canonical" href="https://vibeforce.commandagi.app/es/">
 <link rel="alternate" hreflang="en" href="https://vibeforce.commandagi.app/">
 <link rel="alternate" hreflang="es" href="https://vibeforce.commandagi.app/es/">
 <link rel="alternate" hreflang="zh-Hans" href="https://vibeforce.commandagi.app/zh/">
+<meta property="og:title" content="VibeForce: la fuerza de campo para equipos que entregan">
+<meta property="og:description" content="Describe una misión. Un operador verificado la hace. El depósito paga con evidencia aceptada.">
+<meta property="og:image" content="https://vibeforce.commandagi.app/og.png">
+<meta property="og:url" content="https://vibeforce.commandagi.app/es/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../media/yard.webp" as="image" fetchpriority="high">
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="../mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../touch-icon.png">
+<script src="../home.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Ir al contenido</a>
-<header class="site-head">
-  <div class="wrap">
-    <a class="brand" href="index.html"><img src="../mark.svg" alt="" width="28" height="28">vibeforce</a>
-    <nav class="site-nav" aria-label="Sitio">
-      <a href="index.html" aria-current="page">Inicio</a>
-      <a href="app/">Control de misiones</a>
-      <a href="#pricing">Precios</a>
-      <a href="about.html">Acerca de</a>
-      <span class="lang" aria-label="Idioma">
-        <span class="glyph" aria-hidden="true">A/文</span>
-        <a href="../index.html" hreflang="en" lang="en">EN</a>
-        <a href="index.html" aria-current="true" hreflang="es" lang="es">ES</a>
-        <a href="../zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
-      </span>
-    </nav>
-  </div>
+<header class="strip">
+  <a class="brand" href="../es/index.html"><span class="wm" role="img" aria-label="VibeForce, inicio"></span></a>
+  <nav class="bays" aria-label="Sitio">
+    <a href="../es/index.html" aria-current="page"><b>01</b>Inicio</a>
+    <a href="../es/app/"><b>02</b>Control de misiones</a>
+    <a href="#pricing"><b>03</b>Precios</a>
+    <a href="../es/about.html"><b>04</b>Acerca de</a>
+    <a href="../team.html"><b>05</b>Equipo</a>
+  </nav>
+  <nav class="plate" aria-label="Idioma">
+    <a href="../index.html" hreflang="en" lang="en">EN</a>
+    <a href="../es/" aria-current="true" hreflang="es" lang="es">ES</a>
+    <a href="../zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+  </nav>
 </header>
 
 <main id="main">
-  <div class="wrap">
-    <section class="hero">
-      <p class="eyebrow">VibeForce · una compañía de CommandAGI</p>
-      <h1>Despliega en cualquier lugar.<span class="thin">Personas en el terreno, por horas.</span></h1>
-      <p class="lede">VibeForce es la red global de operaciones de campo para equipos que entregan. Describe una misión con palabras simples. VibeForce la define, asigna un operador verificado cerca del sitio y la sigue hasta la prueba: fotos, GPS y hora en un solo registro. El depósito en garantía paga cuando aceptas la evidencia.</p>
+  <section class="hero-bay" aria-labelledby="hero-title">
+    <div class="hero-type">
+      <p class="bayno">VibeForce · una compañía de CommandAGI</p>
+      <h1 id="hero-title" class="mega">Despliega <span class="tape">donde sea.</span></h1>
+      <p class="sub">Personas en el terreno, por horas.</p>
+      <p class="lede">Describe una misión con palabras simples. Un operador verificado cerca del sitio la hace. El depósito paga cuando aceptas la evidencia.</p>
       <div class="btns">
         <a class="btn primary" href="app/">Describir una misión</a>
-        <a class="btn" href="#how">Cómo funciona</a>
+        <a class="btn" href="#dispatch">Despachar un trabajo de ejemplo</a>
       </div>
-      <p class="notice"><strong>La demostración corre en tu navegador.</strong> El control de misiones es una demostración que funciona sobre una red de operadores de ejemplo: un planificador con reglas fijas, no una llamada a un modelo, y la página no envía nada. Lo que escribes no sale de tu dispositivo.</p>
-    </section>
+      <p class="notice"><strong>Demostración en este sitio.</strong> El control de misiones corre en tu navegador sobre una red de ejemplo: un planificador con reglas fijas, sin llamada a un modelo. Lo que escribes no sale de tu dispositivo.</p>
+    </div>
+    <figure class="hero-clip" style="margin:0">
+      <video data-clip="yard" muted loop playsinline preload="none" poster="../media/yard.webp" aria-label="Imagen generada: un operador con chaleco reflectante cruza un patio de hormigón, visto desde arriba">
+        <source data-src="../media/yard.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+        <source data-src="../media/yard.mp4" type="video/mp4">
+      </video>
+      <span class="mark-tl">Muelle 01 · Patio</span>
+      <figcaption class="clip-cap gen">Imagen generada. No es una misión real.</figcaption>
+    </figure>
+  </section>
 
-    <section id="how" aria-labelledby="how-title">
-      <div class="section-head">
-        <h2 id="how-title">Del encargo a la prueba en horas</h2>
-        <p class="muted">Una misión es un trabajo pequeño y bien definido en el mundo físico: una visita al sitio, una revisión de proveedor, una entrega, una demostración, el montaje de un evento.</p>
+  <section id="dispatch" class="dispatch bay on-forest" aria-labelledby="dispatch-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Muelle 02 · El manifiesto</p>
+          <h2 id="dispatch-title">Despachar un trabajo de ejemplo</h2>
+        </div>
+        <p>Una misión son siete líneas que un cliente puede revisar y un operador puede terminar. Elige un trabajo y despáchalo.</p>
       </div>
-      <ol class="steps">
-        <li><span class="n">01</span><span><strong>Encargo</strong><span class="body">Di qué tiene que pasar, dónde y para cuándo. El planificador escribe el objetivo, los entregables y los criterios de aceptación que vas a revisar.</span></span></li>
-        <li><span class="n">02</span><span><strong>Selección</strong><span class="body">VibeForce propone operadores por ciudad, habilidad y antecedentes, con la razón de cada elección. Ves la tarifa y el depósito antes de que alguien se mueva.</span></span></li>
-        <li><span class="n">03</span><span><strong>Ejecución</strong><span class="body">El operador trabaja la misión y publica fotos, GPS y notas mientras avanza. Sigues una línea de tiempo, no un chat.</span></span></li>
-        <li><span class="n">04</span><span><strong>Paquete de evidencia</strong><span class="body">La misión cierra con un paquete: cada entregable, su evidencia, la hora en que se capturó y quién la capturó.</span></span></li>
-        <li><span class="n">05</span><span><strong>Revisión y pago</strong><span class="body">Aceptas el paquete, o devuelves un punto con una razón. El depósito libera los hitos aceptados y el historial del operador crece.</span></span></li>
-      </ol>
-    </section>
+      <div class="desk">
+        <div>
+          <fieldset class="jobs">
+            <legend>Elige un trabajo</legend>
+            <label class="job"><input type="radio" name="job" value="supplier" checked><span><b>Revisión de proveedor</b><span>Shenzhen · esta semana</span></span></label>
+            <label class="job"><input type="radio" name="job" value="popup"><span><b>Montaje de stand</b><span>Osaka · sábado</span></span></label>
+            <label class="job"><input type="radio" name="job" value="delivery"><span><b>Entrega de prototipo</b><span>Berlín · mañana</span></span></label>
+          </fieldset>
+          <button class="btn primary" id="go" type="button" hidden>Despachar</button>
+        </div>
+        <article class="manifest" aria-labelledby="mf-title">
+          <header>
+            <h3 id="mf-title">Manifiesto de misión</h3>
+            <span class="no" id="mf-no">VF-S-0141</span>
+            <span class="tagline illus" style="margin:0">Ilustrativo · datos de ejemplo</span>
+          </header>
+          <ol id="mf">
+            <li data-k="objective"><span>Objetivo</span><output>Observar una tirada de producción de la carcasa y revisar tres muestras contra el plano rev. C.</output></li>
+            <li data-k="place"><span>Lugar</span><output>Fábrica del proveedor, Shenzhen · esta semana</output></li>
+            <li data-k="skills"><span>Habilidades</span><output><span class="chips-out"><i>Mandarín</i><i>Calibres y galgas</i><i>Visitas a fábrica</i></span></output></li>
+            <li data-k="acceptance"><span>Aceptación</span><output>Tres muestras dentro de ±0,2 mm, o cada desviación fotografiada con la galga a la vista.</output></li>
+            <li data-k="operator"><span>Operador</span><output>Lin W. · Operadora líder · ejemplo ficticio</output></li>
+            <li data-k="evidence"><span>Evidencia</span><output><ul class="ev"><li><i>□</i>Foto, GPS y hora de cada muestra</li><li><i>□</i>Vídeo de 60 s de la línea de embalaje</li><li><i>□</i>Registro de visita firmado</li></ul></output></li>
+            <li data-k="approval" class="pending"><span>Aprobación</span><output>Esperando el despacho</output></li>
+          </ol>
+          <footer><span>No se envía nada. No se contacta a ningún operador y no se mueve dinero.</span><a href="app/">Define la tuya en el control de misiones →</a></footer>
+          <p class="sr" id="mf-live" aria-live="polite"></p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <section aria-labelledby="force-title">
-      <div class="section-head">
-        <h2 id="force-title">Una fuerza de ventas y un CRM para el trabajo que no está en el navegador</h2>
-        <p class="muted">Casi todo un acuerdo pasa fuera de la pantalla: la visita, la muestra, el apretón de manos, la entrega. VibeForce pone ese trabajo en la misma cartera que la cuenta.</p>
-      </div>
-      <div class="grid three">
-        <div class="card"><span class="num">cuentas</span><h3>Una cartera por cuenta</h3><p>Cada empresa con la que trabajas tiene sus contactos, sus misiones y su valor en un solo lugar. Una misión mueve la cuenta, y el historial de la cuenta son sus misiones.</p></div>
-        <div class="card"><span class="num">asignación</span><h3>Una fuerza, no un tablón de empleos</h3><p>Los operadores se ordenan y se pagan por un historial que puedes leer: misiones completadas, evidencia aceptada, calificación. La escala es pública, así que una primera misión y una décima no son lo mismo.</p></div>
-        <div class="card"><span class="num">depósito</span><h3>El dinero espera la prueba</h3><p>El depósito se financia antes de que el operador empiece. Cada hito se libera con una evidencia aceptada, y una disputa lo congela con el registro adjunto.</p></div>
-        <div class="card"><span class="num">registros</span><h3>Cada paso queda registrado</h3><p>El encargo, la selección, el plan, las capturas y el pago son un solo registro. Nada se vuelve a escribir en un segundo sistema, y una afirmación sin evidencia queda abierta.</p></div>
-        <div class="card"><span class="num">confianza</span><h3>Verificados antes de la primera misión</h3><p>La identidad, el permiso de trabajo y las habilidades que la misión pide se revisan antes de que un operador tome trabajo en esa ciudad. Una revisión vencida pausa sus misiones.</p></div>
-        <div class="card"><span class="num">cualquier lugar</span><h3>Donde tu equipo no está</h3><p>Más de 50 ciudades, una forma de encargar y una de aceptar. Un equipo de cinco hace una visita en Osaka y una revisión de proveedor en Shenzhen la misma semana.</p></div>
-      </div>
-    </section>
+  <section class="full" aria-labelledby="proof-title">
+    <video data-clip="proof" muted loop playsinline preload="none" poster="../media/proof.webp" aria-label="Imagen generada: manos con guantes fotografían un palé embalado con un teléfono">
+      <source data-src="../media/proof.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+      <source data-src="../media/proof.mp4" type="video/mp4">
+    </video>
+    <div class="over">
+      <p class="bayno" style="color:var(--lime)">Muelle 03 · Depósito</p>
+      <h2 id="proof-title">El dinero espera <em>la prueba.</em></h2>
+      <ul class="facts"><li>Foto</li><li>GPS</li><li>Hora</li><li>Aceptada por ti</li></ul>
+      <p class="lead">El depósito se financia antes de que empiece el operador. Cada hito se libera con una evidencia aceptada.</p>
+    </div>
+    <span class="clip-cap gen">Imagen generada. No es una misión real.</span>
+  </section>
 
-    <section aria-labelledby="ladder-title">
-      <div class="section-head">
-        <h2 id="ladder-title">La escala del operador</h2>
-        <p class="muted">Los rangos siguen la evidencia aceptada, no el tiempo. La comisión de cada rango se fija por mercado al lanzamiento.</p>
+  <section id="how" class="bay" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Muelle 04 · La ruta</p>
+          <h2 id="how-title">Del encargo a la prueba en horas</h2>
+        </div>
+        <p>Una misión es un trabajo pequeño y bien definido en el mundo físico: una visita, una revisión de proveedor, una entrega, una demostración, un montaje.</p>
       </div>
-      <div class="grid two">
-        <div class="card"><h3>Candidato</h3><p>Primeras misiones, con la supervisión más cercana. Cada captura se revisa antes de cerrar la misión.</p></div>
-        <div class="card"><h3>Operador</h3><p>Misiones estándar con un nivel de servicio base. La evidencia se revisa al volver, no en vivo.</p></div>
-        <div class="card"><h3>Operador líder</h3><p>Misiones complejas y la coordinación de un segundo operador en el mismo sitio.</p></div>
-        <div class="card"><h3>Capitán de campo</h3><p>Misiones en varios sitios, trabajo frente al cliente y la formación de nuevos candidatos en una ciudad.</p></div>
-      </div>
-    </section>
+      <div class="route-box"><span class="line" aria-hidden="true"></span>
+      <ol class="route">
+        <li><span class="stop" aria-hidden="true">1</span><h3>Encargo</h3><p>Di qué, dónde y para cuándo. El planificador escribe el objetivo, los entregables y tus criterios de aceptación.</p></li>
+        <li><span class="stop" aria-hidden="true">2</span><h3>Selección</h3><p>Una lista por ciudad, habilidad y antecedentes, con la razón de cada elección. Tarifa y depósito primero.</p></li>
+        <li><span class="stop" aria-hidden="true">3</span><h3>Ejecución</h3><p>El operador publica fotos, GPS y notas mientras avanza. Sigues una línea de tiempo, no un chat.</p></li>
+        <li><span class="stop" aria-hidden="true">4</span><h3>Evidencia</h3><p>Un paquete: cada entregable, su evidencia, cuándo se capturó y quién.</p></li>
+        <li><span class="stop" aria-hidden="true">5</span><h3>Pago</h3><p>Acepta el paquete o devuelve un punto con una razón. El depósito libera lo aceptado.</p></li>
+      </ol></div>
+    </div>
+  </section>
 
-    <section id="pricing" aria-labelledby="pricing-title">
-      <div class="section-head">
-        <h2 id="pricing-title">Planes</h2>
-        <p class="muted">El plan cubre la plataforma: encargos, selección, evidencia y depósito. La tarifa del operador de cada misión se muestra antes de confirmarla.</p>
+  <section class="bay" aria-labelledby="force-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Muelle 05 · El riel</p>
+          <h2 id="force-title">Una fuerza de ventas para el trabajo fuera de la pantalla</h2>
+        </div>
+        <p>La visita, la muestra, el apretón de manos, la entrega: VibeForce pone ese trabajo en el mismo embudo que la cuenta.</p>
       </div>
-      <div class="plans">
+      <div class="rail">
+        <article class="tag-card"><p class="code"><span>ACC-01</span><span>Cuentas</span></p><h3>Un embudo por cuenta</h3><p>Contactos, misiones y valor en un lugar. La historia de una cuenta son sus misiones.</p></article>
+        <article class="tag-card hot"><p class="code"><span>DSP-02</span><span>Despacho</span></p><h3>Una fuerza, no una bolsa de trabajo</h3><p>Operadores ordenados por un historial legible: misiones hechas, evidencia aceptada.</p></article>
+        <article class="tag-card"><p class="code"><span>ESC-03</span><span>Depósito</span></p><h3>El dinero espera la prueba</h3><p>Financiado antes de empezar. Una disputa lo congela con el registro adjunto.</p></article>
+        <article class="tag-card"><p class="code"><span>REC-04</span><span>Registros</span></p><h3>Cada paso registrado</h3><p>Encargo, elección, plan, capturas, pago: un registro. Lo que no tiene evidencia sigue abierto.</p></article>
+        <article class="tag-card"><p class="code"><span>TRS-05</span><span>Confianza</span></p><h3>Verificado antes de la primera misión</h3><p>Identidad, permiso de trabajo y habilidades por ciudad. Una verificación vencida pausa las misiones.</p></article>
+        <article class="tag-card"><p class="code"><span>ANY-06</span><span>Donde sea</span></p><h3>Donde tu equipo no está</h3><p>Una forma de encargar, una de aceptar: Osaka el lunes, Shenzhen el jueves.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bay" aria-labelledby="ladder-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Muelle 06 · La escalera</p>
+          <h2 id="ladder-title">El rango sigue a la evidencia</h2>
+        </div>
+        <p>No a la antigüedad. La comisión de cada rango se fija por mercado al lanzar.</p>
+      </div>
+      <div class="ladder">
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/></svg><h3>Candidato</h3><p>Primeras misiones. Cada captura se revisa antes de cerrar.</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/></svg><h3>Operador</h3><p>Misiones estándar, un nivel de servicio base, evidencia revisada al volver.</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/><path d="M4 82 44 58l40 24v14L44 72 4 96z" fill="#14372e"/></svg><h3>Operador líder</h3><p>Misiones complejas y un segundo operador en el mismo sitio.</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><rect x="0" y="0" width="88" height="96" fill="#dcfa43"/><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/><path d="M4 82 44 58l40 24v14L44 72 4 96z" fill="#14372e"/></svg><h3>Capitán de campo</h3><p>Varios sitios, trato con el cliente y formación de candidatos en una ciudad.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="full" aria-labelledby="where-title">
+    <video data-clip="route" muted loop playsinline preload="none" poster="../media/route.webp" aria-label="Imagen generada: una furgoneta sin marcas con las puertas abiertas en un cruce mojado al anochecer">
+      <source data-src="../media/route.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+      <source data-src="../media/route.mp4" type="video/mp4">
+    </video>
+    <div class="over">
+      <p class="bayno" style="color:var(--lime)">Muelle 07 · Donde sea</p>
+      <h2 id="where-title">Donde tu equipo <em>no está.</em></h2>
+      <ul class="facts"><li>Más de 50 ciudades</li><li>Una forma de encargar</li><li>Una de aceptar</li></ul>
+    </div>
+    <span class="clip-cap gen">Imagen generada. No es una misión real.</span>
+  </section>
+
+  <section id="pricing" class="bay" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Muelle 08 · Tarifas</p>
+          <h2 id="pricing-title">Planes</h2>
+        </div>
+        <p>Un plan cubre la plataforma: encargos, selección, evidencia y depósito. La tarifa del operador de cada misión se muestra antes de confirmar.</p>
+      </div>
+      <div class="tariff">
         <div class="plan">
-          <h3>Inicio</h3>
+          <h3><span>Launch</span><span>T-1</span></h3>
           <p class="price">$99</p>
-          <p class="per">por mes</p>
-          <ul>
-            <li>5 misiones al mes</li>
-            <li>Selección de rango Operador</li>
-            <li>Paquetes de evidencia estándar</li>
-            <li>Nivel de servicio de mejor esfuerzo</li>
-          </ul>
+          <p class="per">al mes</p>
+          <ul><li>5 misiones al mes</li><li>Selección de nivel Operador</li><li>Paquetes de evidencia estándar</li><li>Servicio sin garantía de plazo</li></ul>
           <a class="btn" href="app/">Empezar</a>
         </div>
         <div class="plan featured">
-          <h3>Crecimiento</h3>
+          <h3><span>Growth</span><span>T-2</span></h3>
           <p class="price">$349</p>
-          <p class="per">por mes</p>
-          <ul>
-            <li>25 misiones al mes</li>
-            <li>Selección hasta Operador líder</li>
-            <li>Paquetes de evidencia ampliados</li>
-            <li>Respuesta en 24 horas</li>
-            <li>Acceso a la API</li>
-          </ul>
+          <p class="per">al mes</p>
+          <ul><li>25 misiones al mes</li><li>Selección hasta Operador líder</li><li>Paquetes de evidencia ampliados</li><li>Respuesta en 24 horas</li><li>Acceso a la API</li></ul>
           <a class="btn primary" href="app/">Empezar</a>
         </div>
         <div class="plan">
-          <h3>Platino</h3>
-          <p class="price">Hablemos</p>
+          <h3><span>Platinum</span><span>T-3</span></h3>
+          <p class="price words">Hablemos</p>
           <p class="per">anual, por acuerdo</p>
-          <ul>
-            <li>Misiones ilimitadas</li>
-            <li>Cobertura de Capitanes de campo</li>
-            <li>Integraciones a medida</li>
-            <li>Un gestor de éxito con nombre</li>
-          </ul>
-          <a class="btn" href="mailto:hello@vibeforce.pro?subject=VibeForce%20Platino">Hablar con ventas</a>
+          <ul><li>Misiones ilimitadas</li><li>Cobertura de Capitán de campo</li><li>Integraciones a medida</li><li>Un responsable de cuenta</li></ul>
+          <a class="btn" href="mailto:hello@vibeforce.pro?subject=VibeForce%20Platinum">Contactar ventas</a>
         </div>
       </div>
-      <p class="small muted" style="margin-top:16px">Los precios son del propietario y cambian con aviso. El costo de cada misión se cotiza antes de confirmarla, y el depósito se financia en ese momento.</p>
-    </section>
+      <p class="fineprint muted">Los precios son del propietario y cambian con aviso. El coste de cada misión se cotiza antes de confirmarla, y el depósito se financia entonces.</p>
+    </div>
+  </section>
 
-    <section aria-labelledby="faq-title">
-      <h2 id="faq-title">Preguntas</h2>
-      <details><summary>¿La demostración de este sitio es real?</summary><p>Es una demostración que funciona, no una cuenta real. El planificador es un script en tu navegador: lee tu encargo, elige de una red de operadores de ejemplo y arma la misión, el plan y la cartera. No hace ninguna llamada a un modelo y no envía datos. No se despacha nada y no se mueve dinero.</p></details>
-      <details><summary>¿Quiénes son los operadores?</summary><p>Personas verificadas que toman misiones en su ciudad, y los agentes de IA que las apoyan. Los operadores del ejemplo son ficticios: sus nombres, calificaciones e historiales están inventados para la demostración.</p></details>
-      <details><summary>¿Qué cuenta como evidencia?</summary><p>Una foto con coordenada GPS y hora, un recibo firmado, un documento o un video corto, adjunto a un entregable. El paquete lista cada entregable y qué se aceptó para él.</p></details>
-      <details><summary>¿Y si un punto está mal?</summary><p>Devuelves ese punto con una razón. La misión queda en revisión hasta que se rehaga o se abra la disputa; el depósito no libera nada por un punto no aceptado.</p></details>
-      <details><summary>¿VibeForce hace las revisiones legales o de seguridad de un sitio?</summary><p>No. Los permisos de trabajo, el acceso al sitio, los permisos municipales y las reglas de seguridad son del cliente y del operador. VibeForce revisa la identidad y las habilidades de un operador antes de su primera misión, y registra qué se revisó.</p></details>
-    </section>
-  </div>
-</main>
-
-<footer class="site-foot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="index.html"><img src="../mark.svg" alt="" width="24" height="24">vibeforce</a>
-        <p class="small" style="margin-top:10px">Operaciones de campo globales para equipos que entregan.</p>
+  <section class="bay" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">Muelle 09 · Notas de campo</p>
+          <h2 id="faq-title">Preguntas</h2>
+        </div>
       </div>
-      <div>
-        <h4>Producto</h4>
-        <ul>
-          <li><a href="app/">Control de misiones</a></li>
-          <li><a href="#pricing">Precios</a></li>
-          <li><a href="about.html">Acerca de</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <ul>
-          <li><a href="mailto:hello@vibeforce.pro">hello@vibeforce.pro</a></li>
-          <li><a href="https://vibeforce.pro/">vibeforce.pro</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Idioma</h4>
-        <ul>
-          <li><a href="../index.html" hreflang="en">English</a></li>
-          <li><a href="index.html" hreflang="es" aria-current="true">Español</a></li>
-          <li><a href="../zh/" hreflang="zh-Hans">简体中文</a></li>
-        </ul>
+      <div class="notes">
+        <details><summary>¿Es real la demostración de este sitio?</summary><p>Es una demostración que funciona, no una cuenta en vivo. El planificador es un script en tu navegador: lee tu encargo, elige de una red de operadores de ejemplo y arma la misión, el plan y el embudo. No llama a ningún modelo ni envía datos. No se despacha nada y no se mueve dinero.</p></details>
+        <details><summary>¿Quiénes son los operadores?</summary><p>Personas verificadas que toman misiones en su ciudad, y los agentes de IA que las apoyan. Los operadores de ejemplo de la demostración y del manifiesto son ficticios; sus nombres, calificaciones e historiales son inventados.</p></details>
+        <details><summary>¿Qué cuenta como evidencia?</summary><p>Una foto con coordenada GPS y hora, un recibo firmado, un documento o un vídeo corto, adjuntos a un entregable. El paquete lista cada entregable y lo que se aceptó.</p></details>
+        <details><summary>¿Y si un punto está mal?</summary><p>Devuelves ese punto con una razón. La misión sigue en revisión hasta que se rehace o se abre la disputa; el depósito no libera nada por un punto no aceptado.</p></details>
+        <details><summary>¿VibeForce hace las revisiones legales o de seguridad de un sitio?</summary><p>No. Los permisos de trabajo, el acceso, las licencias y las normas de seguridad de un sitio son del cliente y del operador. VibeForce verifica la identidad y las habilidades de un operador antes de su primera misión, y registra lo verificado.</p></details>
+        <details><summary>¿Son reales las imágenes de esta página?</summary><p>No. Los tres clips son imágenes y movimiento generados (fal) para este sitio. No muestran a ningún operador, cliente, lugar o misión reales.</p></details>
       </div>
     </div>
-    <p class="fine">VibeForce es una compañía de <a href="https://commandagi.com/">CommandAGI</a> y corre sobre su alojamiento de sitios y sus registros. Los operadores, misiones, precios y calificaciones de las páginas de demostración son ficticios. © 2026 VibeForce.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="haz"></div>
+  <div class="big" aria-hidden="true"><span class="wm"></span></div>
+  <div class="cols">
+    <div><h2>VibeForce</h2><p>Operaciones de campo globales para equipos que entregan.</p></div>
+    <div><h2>Producto</h2><ul><li><a href="../es/app/">Control de misiones</a></li><li><a href="#pricing">Precios</a></li><li><a href="../es/about.html">Acerca de</a></li><li><a href="../team.html">Equipo</a></li></ul></div>
+    <div><h2>Contacto</h2><ul><li><a href="mailto:hello@vibeforce.pro">hello@vibeforce.pro</a></li><li><a href="https://vibeforce.pro/">vibeforce.pro</a></li></ul></div>
+    <div><h2>Idioma</h2><ul><li><a href="../index.html" hreflang="en" lang="en">English</a></li><li><a href="../es/" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="../zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li></ul></div>
   </div>
+  <p class="fine">VibeForce es una compañía de <a href="https://commandagi.com/">CommandAGI</a> y corre sobre su alojamiento de sitios y sus registros. Los operadores, misiones, precios y calificaciones de las páginas de demostración son ficticios. Las imágenes en movimiento son generadas. © 2026 VibeForce.</p>
 </footer>
 </body>
 </html>

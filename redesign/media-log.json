@@ -1,0 +1,59 @@
+[
+  {
+    "at": "2026-10-27T04:27:13.121Z",
+    "shot": "route",
+    "kind": "still",
+    "model": "fal-ai/nano-banana-pro",
+    "requestId": "01a17b9c-7ae7-7393-bbd6-af1e269c7e62",
+    "prompt": "Street-level view at dusk of a wet empty crossroads in an unnamed industrial district, low warehouses, a plain white unmarked van parked at the kerb, its rear doors open. Sodium street light, a hi-vis lime vest folded on the van floor. Wide, quiet, cinematic. Documentary photograph, 35mm, natural cold daylight, muted concrete greys and deep forest green, a single hi-vis lime-yellow accent, crisp detail, slight film grain, no faces visible, no readable text, no logos, no watermark. Fictional, not a real company or event.",
+    "usd": 0.15
+  },
+  {
+    "at": "2026-10-27T04:27:16.778Z",
+    "shot": "proof",
+    "kind": "still",
+    "model": "fal-ai/nano-banana-pro",
+    "requestId": "01a17b9c-7af2-7593-8990-130b8bc79dcd",
+    "prompt": "Close-up at waist height inside a warehouse: two hands in grey work gloves hold a phone level, photographing a stretch-wrapped pallet of plain cardboard boxes. The phone's screen shows the pallet. A hi-vis lime sleeve cuff. Cold overhead light, a forest-green steel rack soft in the background. Documentary photograph, 35mm, natural cold daylight, muted concrete greys and deep forest green, a single hi-vis lime-yellow accent, crisp detail, slight film grain, no faces visible, no readable text, no logos, no watermark. Fictional, not a real company or event.",
+    "usd": 0.15
+  },
+  {
+    "at": "2026-10-27T04:27:17.616Z",
+    "shot": "yard",
+    "kind": "still",
+    "model": "fal-ai/nano-banana-pro",
+    "requestId": "01a17b9c-7ae8-77d2-8e71-1c7e2e9c8c91",
+    "prompt": "Straight top-down aerial view of a bare concrete loading yard at early morning. Painted lime-yellow floor lines and empty hatched bays. One field operator in a hi-vis lime vest and dark work trousers walks diagonally across the frame carrying a black hard case, a long low shadow behind them. A forest-green shipping container cuts the right edge. Lots of empty concrete. Documentary photograph, 35mm, natural cold daylight, muted concrete greys and deep forest green, a single hi-vis lime-yellow accent, crisp detail, slight film grain, no faces visible, no readable text, no logos, no watermark. Fictional, not a real company or event.",
+    "usd": 0.15
+  },
+  {
+    "at": "2026-10-27T04:28:17.032Z",
+    "shot": "proof",
+    "kind": "video",
+    "model": "fal-ai/kling-video/v2.5-turbo/pro/image-to-video",
+    "requestId": "01a17b9c-cfda-7ca0-9127-0d1074283400",
+    "prompt": "Slow handheld push towards the pallet, the hands steady the phone, a small tap on the screen as the photo is taken. Gentle, no cuts.",
+    "seconds": 5,
+    "usd": 0.35000000000000003
+  },
+  {
+    "at": "2026-10-27T04:28:32.815Z",
+    "shot": "route",
+    "kind": "video",
+    "model": "fal-ai/kling-video/v2.5-turbo/pro/image-to-video",
+    "requestId": "01a17b9c-c19a-7550-89a5-5ad0a390ba10",
+    "prompt": "Very slow dolly forward towards the open van, light rain glints on the asphalt, a street light flickers on once. No people, no traffic.",
+    "seconds": 5,
+    "usd": 0.35000000000000003
+  },
+  {
+    "at": "2026-10-27T04:28:48.030Z",
+    "shot": "yard",
+    "kind": "video",
+    "model": "fal-ai/kling-video/v2.5-turbo/pro/image-to-video",
+    "requestId": "01a17b9c-d312-7822-9e39-dcfb207a1fc8",
+    "prompt": "Locked-off top-down camera. The operator walks slowly across the yard from lower left to upper right, the shadow follows, nothing else moves. Calm, steady, real time.",
+    "seconds": 10,
+    "usd": 0.7000000000000001
+  }
+]

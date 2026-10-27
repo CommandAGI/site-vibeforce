@@ -2,183 +2,260 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>VibeForce：为交付型团队而生的现场力量</title>
-<meta name="description" content="VibeForce 是面向交付型团队的全球现场运维网络。写下任务，经过验证的现场执行者带着照片、定位和时间戳完成，你接受证据后托管账户付款。">
+<meta name="description" content="VibeForce 是为交付型团队而生的全球现场运维网络。描述一项任务，经过审核的执行者用照片、GPS 和时间戳作证完成，证据被接受后托管资金才付款。">
+<meta name="theme-color" content="#14372e">
 <link rel="canonical" href="https://vibeforce.commandagi.app/zh/">
 <link rel="alternate" hreflang="en" href="https://vibeforce.commandagi.app/">
 <link rel="alternate" hreflang="es" href="https://vibeforce.commandagi.app/es/">
 <link rel="alternate" hreflang="zh-Hans" href="https://vibeforce.commandagi.app/zh/">
+<meta property="og:title" content="VibeForce：为交付型团队而生的现场力量">
+<meta property="og:description" content="描述任务。审核过的执行者完成。证据被接受后托管付款。">
+<meta property="og:image" content="https://vibeforce.commandagi.app/og.png">
+<meta property="og:url" content="https://vibeforce.commandagi.app/zh/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../media/yard.webp" as="image" fetchpriority="high">
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="../mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../touch-icon.png">
+<script src="../home.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">跳到正文</a>
-<header class="site-head">
-  <div class="wrap">
-    <a class="brand" href="index.html"><img src="../mark.svg" alt="" width="28" height="28">vibeforce</a>
-    <nav class="site-nav" aria-label="站点">
-      <a href="index.html" aria-current="page">首页</a>
-      <a href="app/">任务控制台</a>
-      <a href="#pricing">价格</a>
-      <a href="about.html">关于</a>
-      <span class="lang" aria-label="语言">
-        <span class="glyph" aria-hidden="true">A/文</span>
-        <a href="../index.html" hreflang="en" lang="en">EN</a>
-        <a href="../es/" hreflang="es" lang="es">ES</a>
-        <a href="index.html" aria-current="true" hreflang="zh-Hans" lang="zh-Hans">中文</a>
-      </span>
-    </nav>
-  </div>
+<header class="strip">
+  <a class="brand" href="../zh/index.html"><span class="wm" role="img" aria-label="VibeForce 首页"></span></a>
+  <nav class="bays" aria-label="站点">
+    <a href="../zh/index.html" aria-current="page"><b>01</b>首页</a>
+    <a href="../zh/app/"><b>02</b>任务控制台</a>
+    <a href="#pricing"><b>03</b>价格</a>
+    <a href="../zh/about.html"><b>04</b>关于</a>
+    <a href="../team.html"><b>05</b>团队</a>
+  </nav>
+  <nav class="plate" aria-label="语言">
+    <a href="../index.html" hreflang="en" lang="en">EN</a>
+    <a href="../es/" hreflang="es" lang="es">ES</a>
+    <a href="../zh/" aria-current="true" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+  </nav>
 </header>
 
 <main id="main">
-  <div class="wrap">
-    <section class="hero">
-      <p class="eyebrow">VibeForce · CommandAGI 旗下公司</p>
-      <h1>随时落地。<span class="thin">按小时派出真实的现场人手。</span></h1>
-      <p class="lede">VibeForce 是面向交付型团队的全球现场运维网络。用平常的话写下一项任务。VibeForce 把它拆成清楚的范围，匹配场地附近经过验证的执行者，并一路跟进到证据：照片、定位和时间戳都记在同一份记录里。你接受证据后，托管账户才付款。</p>
+  <section class="hero-bay" aria-labelledby="hero-title">
+    <div class="hero-type">
+      <p class="bayno">VibeForce · CommandAGI 旗下公司</p>
+      <h1 id="hero-title" class="mega">派往 <span class="tape">任何地方。</span></h1>
+      <p class="sub">现场有人，按小时计。</p>
+      <p class="lede">用平常的话描述任务。现场附近经过审核的执行者去完成。你接受证据后，托管资金才付款。</p>
       <div class="btns">
-        <a class="btn primary" href="app/">写下任务</a>
-        <a class="btn" href="#how">如何运作</a>
+        <a class="btn primary" href="app/">描述一项任务</a>
+        <a class="btn" href="#dispatch">派一个示例任务</a>
       </div>
-      <p class="notice"><strong>演示在你的浏览器里运行。</strong>任务控制台是一份可用的演示，基于一支示例执行者网络：一个按固定规则运行的计划器，不是模型调用，页面不向外发送任何内容。你输入的内容不会离开你的设备。</p>
-    </section>
+      <p class="notice"><strong>本站为演示。</strong>任务控制台在你的浏览器里运行，基于示例网络：固定规则的规划器，不调用模型。你输入的内容不会离开你的设备。</p>
+    </div>
+    <figure class="hero-clip" style="margin:0">
+      <video data-clip="yard" muted loop playsinline preload="none" poster="../media/yard.webp" aria-label="生成画面：一名穿反光背心的执行者从俯视角度穿过水泥场地">
+        <source data-src="../media/yard.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+        <source data-src="../media/yard.mp4" type="video/mp4">
+      </video>
+      <span class="mark-tl">01 号位 · 场地</span>
+      <figcaption class="clip-cap gen">生成画面，并非真实任务。</figcaption>
+    </figure>
+  </section>
 
-    <section id="how" aria-labelledby="how-title">
-      <div class="section-head">
-        <h2 id="how-title">从任务到证据，几小时</h2>
-        <p class="muted">一项任务是一次范围小、边界清楚的真实世界工作：一次现场走访、一次供应商核查、一次交付、一次演示、一次活动搭建。</p>
+  <section id="dispatch" class="dispatch bay on-forest" aria-labelledby="dispatch-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">02 号位 · 任务单</p>
+          <h2 id="dispatch-title">派一个示例任务</h2>
+        </div>
+        <p>一项任务就是七行：客户能核对，执行者能完成。选一个任务，派出去。</p>
       </div>
-      <ol class="steps">
-        <li><span class="n">01</span><span><strong>写任务</strong><span class="body">说明要发生什么、在哪里、什么时候前完成。计划器写出目标、交付物，以及你会逐条核对的验收标准。</span></span></li>
-        <li><span class="n">02</span><span><strong>匹配</strong><span class="body">VibeForce 按城市、技能和履约记录列出候选执行者，并给出每一项的理由。你会在任何人出发之前看到费率和托管金额。</span></span></li>
-        <li><span class="n">03</span><span><strong>执行</strong><span class="body">执行者在现场作业，边做边上传照片、定位和记录。你看到的是时间线，不是聊天串。</span></span></li>
-        <li><span class="n">04</span><span><strong>证据包</strong><span class="body">任务以一份证据包收尾：每个交付物、它的证据、采集时间，以及由谁采集。</span></span></li>
-        <li><span class="n">05</span><span><strong>复盘与结算</strong><span class="body">你接受整份证据包，或指出其中一项并写明理由。托管账户释放已接受的里程碑，执行者的记录随之增长。</span></span></li>
-      </ol>
-    </section>
+      <div class="desk">
+        <div>
+          <fieldset class="jobs">
+            <legend>选择任务</legend>
+            <label class="job"><input type="radio" name="job" value="supplier" checked><span><b>供应商核查</b><span>深圳 · 本周</span></span></label>
+            <label class="job"><input type="radio" name="job" value="popup"><span><b>快闪搭建</b><span>大阪 · 周六</span></span></label>
+            <label class="job"><input type="radio" name="job" value="delivery"><span><b>原型交接</b><span>柏林 · 明天</span></span></label>
+          </fieldset>
+          <button class="btn primary" id="go" type="button" hidden>派单</button>
+        </div>
+        <article class="manifest" aria-labelledby="mf-title">
+          <header>
+            <h3 id="mf-title">任务单</h3>
+            <span class="no" id="mf-no">VF-S-0141</span>
+            <span class="tagline illus" style="margin:0">示意 · 示例数据</span>
+          </header>
+          <ol id="mf">
+            <li data-k="objective"><span>目标</span><output>现场观看一次外壳生产，并按图纸 C 版检查三个样品。</output></li>
+            <li data-k="place"><span>地点</span><output>供应商工厂，深圳 · 本周</output></li>
+            <li data-k="skills"><span>技能</span><output><span class="chips-out"><i>普通话</i><i>卡尺与量规</i><i>工厂走访</i></span></output></li>
+            <li data-k="acceptance"><span>验收</span><output>三个样品误差在 ±0.2 毫米以内，或每处偏差连同量规一起拍照。</output></li>
+            <li data-k="operator"><span>执行者</span><output>Lin W. · 高级操作员 · 虚构示例</output></li>
+            <li data-k="evidence"><span>证据</span><output><ul class="ev"><li><i>□</i>每个样品的照片、GPS 与时间</li><li><i>□</i>60 秒包装线视频</li><li><i>□</i>签字的走访记录</li></ul></output></li>
+            <li data-k="approval" class="pending"><span>批准</span><output>等待派单</output></li>
+          </ol>
+          <footer><span>不发送任何内容。不联系任何执行者，不动用任何资金。</span><a href="app/">在任务控制台里定义你自己的任务 →</a></footer>
+          <p class="sr" id="mf-live" aria-live="polite"></p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <section aria-labelledby="force-title">
-      <div class="section-head">
-        <h2 id="force-title">一支销售队伍和一套 CRM，管住浏览器之外的工作</h2>
-        <p class="muted">一次成交大多发生在屏幕之外：走访、样品、握手、交付。VibeForce 把这些工作和客户账户放进同一条管道。</p>
-      </div>
-      <div class="grid three">
-        <div class="card"><span class="num">账户</span><h3>每个账户一条管道</h3><p>每个合作公司都有联系人、任务和价值，在一处查看。任务推动账户前进，账户的历史就是它的任务。</p></div>
-        <div class="card"><span class="num">派遣</span><h3>是一支队伍，不是招聘板</h3><p>执行者按一份你能读到的记录排序与结算：完成的任务、被接受的证据、评分。等级公开，所以第一次任务和第十次不一样。</p></div>
-        <div class="card"><span class="num">托管</span><h3>钱等证据</h3><p>执行者开工之前托管账户就已入金。每个里程碑随一项被接受的证据释放；出现争议时账户冻结，并附上整份记录。</p></div>
-        <div class="card"><span class="num">记录</span><h3>每一步都有记录</h3><p>任务说明、候选人、计划、现场采集和付款是同一条记录。没有第二个系统需要重录，没有证据的说法保持未结。</p></div>
-        <div class="card"><span class="num">信任</span><h3>第一次任务之前完成验证</h3><p>身份、工作许可和任务需要的技能都会在该城市开工之前核查。核查过期，任务即暂停。</p></div>
-        <div class="card"><span class="num">任何地方</span><h3>你的团队不在的地方</h3><p>50 多个城市，一种写任务的方式，一种验收方式。五个人的团队可以在同一周完成大阪的现场走访和深圳的供应商核查。</p></div>
-      </div>
-    </section>
+  <section class="full" aria-labelledby="proof-title">
+    <video data-clip="proof" muted loop playsinline preload="none" poster="../media/proof.webp" aria-label="生成画面：戴手套的手用手机拍摄一个缠膜托盘">
+      <source data-src="../media/proof.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+      <source data-src="../media/proof.mp4" type="video/mp4">
+    </video>
+    <div class="over">
+      <p class="bayno" style="color:var(--lime)">03 号位 · 托管</p>
+      <h2 id="proof-title">钱，等 <em>证据。</em></h2>
+      <ul class="facts"><li>照片</li><li>GPS</li><li>时间戳</li><li>由你接受</li></ul>
+      <p class="lead">执行者开工前托管资金已到位。每个里程碑凭一项被接受的证据放款。</p>
+    </div>
+    <span class="clip-cap gen">生成画面，并非真实任务。</span>
+  </section>
 
-    <section aria-labelledby="ladder-title">
-      <div class="section-head">
-        <h2 id="ladder-title">执行者等级</h2>
-        <p class="muted">等级看被接受的证据，不看资历。每级的佣金按市场在发布时确定。</p>
+  <section id="how" class="bay" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">04 号位 · 路线</p>
+          <h2 id="how-title">从描述到证据，只需数小时</h2>
+        </div>
+        <p>任务是现实世界里范围明确的小工作：现场走访、供应商核查、递送、演示、活动搭建。</p>
       </div>
-      <div class="grid two">
-        <div class="card"><h3>候选</h3><p>最初的任务，监督最紧。每一项采集在任务关闭前都要复核。</p></div>
-        <div class="card"><h3>执行者</h3><p>标准任务，基础服务级别。证据在返回后复核，不需要实时监督。</p></div>
-        <div class="card"><h3>主执行者</h3><p>复杂任务，以及在同一个场地协调第二名执行者。</p></div>
-        <div class="card"><h3>现场队长</h3><p>跨场地任务、面向客户的工作，以及培养同一城市的新候选。</p></div>
-      </div>
-    </section>
+      <div class="route-box"><span class="line" aria-hidden="true"></span>
+      <ol class="route">
+        <li><span class="stop" aria-hidden="true">1</span><h3>描述</h3><p>说清做什么、在哪、何时完成。规划器写出目标、交付物和你的验收标准。</p></li>
+        <li><span class="stop" aria-hidden="true">2</span><h3>匹配</h3><p>按城市、技能和记录给出候选名单，并说明理由。先看费率和托管金额。</p></li>
+        <li><span class="stop" aria-hidden="true">3</span><h3>执行</h3><p>执行者边做边上传照片、GPS 和备注。你看的是时间线，不是聊天。</p></li>
+        <li><span class="stop" aria-hidden="true">4</span><h3>证据</h3><p>一个证据包：每项交付物、它的证据、拍摄时间和拍摄人。</p></li>
+        <li><span class="stop" aria-hidden="true">5</span><h3>付款</h3><p>接受证据包，或附理由退回一项。托管只放款你接受的部分。</p></li>
+      </ol></div>
+    </div>
+  </section>
 
-    <section id="pricing" aria-labelledby="pricing-title">
-      <div class="section-head">
-        <h2 id="pricing-title">套餐</h2>
-        <p class="muted">套餐覆盖平台本身：任务、匹配、证据和托管。每项任务的执行者费率会在确认之前显示。</p>
+  <section class="bay" aria-labelledby="force-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">05 号位 · 挂轨</p>
+          <h2 id="force-title">为屏幕之外的工作而建的销售力量</h2>
+        </div>
+        <p>拜访、样品、握手、交付：VibeForce 把这些工作放进与客户同一条管线。</p>
       </div>
-      <div class="plans">
+      <div class="rail">
+        <article class="tag-card"><p class="code"><span>ACC-01</span><span>客户</span></p><h3>每个客户一条管线</h3><p>联系人、任务和金额在一处。客户的历史就是它的任务。</p></article>
+        <article class="tag-card hot"><p class="code"><span>DSP-02</span><span>调度</span></p><h3>是一支队伍，不是招工板</h3><p>执行者按可读的记录排序：完成的任务、被接受的证据。</p></article>
+        <article class="tag-card"><p class="code"><span>ESC-03</span><span>托管</span></p><h3>钱等证据</h3><p>开工前到位。有争议时连同记录一起冻结。</p></article>
+        <article class="tag-card"><p class="code"><span>REC-04</span><span>记录</span></p><h3>每一步都有记录</h3><p>描述、选择、计划、拍摄、付款：一份记录。没有证据的声明保持未结。</p></article>
+        <article class="tag-card"><p class="code"><span>TRS-05</span><span>信任</span></p><h3>首个任务前完成审核</h3><p>按城市核查身份、工作许可和技能。审核过期则暂停任务。</p></article>
+        <article class="tag-card"><p class="code"><span>ANY-06</span><span>任何地方</span></p><h3>你的团队不在的地方</h3><p>一种描述方式，一种验收方式：周一大阪，周四深圳。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bay" aria-labelledby="ladder-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">06 号位 · 晋级</p>
+          <h2 id="ladder-title">等级跟着证据走</h2>
+        </div>
+        <p>不看资历。各等级的佣金在各市场上线时确定。</p>
+      </div>
+      <div class="ladder">
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/></svg><h3>候选人</h3><p>最初的任务。每次拍摄都在任务结束前审核。</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/></svg><h3>操作员</h3><p>标准任务，基础服务水平，证据回传后审核。</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/><path d="M4 82 44 58l40 24v14L44 72 4 96z" fill="#14372e"/></svg><h3>高级操作员</h3><p>复杂任务，并协调同一现场的第二名执行者。</p></div>
+        <div class="rank"><svg viewBox="0 0 88 96" aria-hidden="true"><rect x="0" y="0" width="88" height="96" fill="#dcfa43"/><path d="M4 30 44 6l40 24v18L44 24 4 48z" fill="#14372e"/><path d="M4 56 44 32l40 24v18L44 50 4 74z" fill="#14372e"/><path d="M4 82 44 58l40 24v14L44 72 4 96z" fill="#14372e"/></svg><h3>现场队长</h3><p>多地点、面向客户的工作，并培训本城新候选人。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="full" aria-labelledby="where-title">
+    <video data-clip="route" muted loop playsinline preload="none" poster="../media/route.webp" aria-label="生成画面：黄昏时湿漉漉的路口，一辆无标识的厢式货车打开后门">
+      <source data-src="../media/route.av1.mp4" type="video/mp4; codecs=av01.0.05M.08">
+      <source data-src="../media/route.mp4" type="video/mp4">
+    </video>
+    <div class="over">
+      <p class="bayno" style="color:var(--lime)">07 号位 · 任何地方</p>
+      <h2 id="where-title">你的团队 <em>不在的地方。</em></h2>
+      <ul class="facts"><li>50+ 城市</li><li>一种描述方式</li><li>一种验收方式</li></ul>
+    </div>
+    <span class="clip-cap gen">生成画面，并非真实任务。</span>
+  </section>
+
+  <section id="pricing" class="bay" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">08 号位 · 价目</p>
+          <h2 id="pricing-title">方案</h2>
+        </div>
+        <p>方案涵盖平台：描述、匹配、证据和托管。每项任务的执行者费率在你确认前显示。</p>
+      </div>
+      <div class="tariff">
         <div class="plan">
-          <h3>起步</h3>
+          <h3><span>Launch</span><span>T-1</span></h3>
           <p class="price">$99</p>
           <p class="per">每月</p>
-          <ul>
-            <li>每月 5 项任务</li>
-            <li>执行者级匹配</li>
-            <li>标准证据包</li>
-            <li>尽力而为的服务级别</li>
-          </ul>
+          <ul><li>每月 5 个任务</li><li>操作员级匹配</li><li>标准证据包</li><li>尽力而为的服务水平</li></ul>
           <a class="btn" href="app/">开始</a>
         </div>
         <div class="plan featured">
-          <h3>成长</h3>
+          <h3><span>Growth</span><span>T-2</span></h3>
           <p class="price">$349</p>
           <p class="per">每月</p>
-          <ul>
-            <li>每月 25 项任务</li>
-            <li>可匹配到主执行者</li>
-            <li>增强证据包</li>
-            <li>24 小时响应</li>
-            <li>API 访问</li>
-          </ul>
+          <ul><li>每月 25 个任务</li><li>最高高级操作员匹配</li><li>增强证据包</li><li>24 小时响应</li><li>API 访问</li></ul>
           <a class="btn primary" href="app/">开始</a>
         </div>
         <div class="plan">
-          <h3>白金</h3>
-          <p class="price">联系我们</p>
+          <h3><span>Platinum</span><span>T-3</span></h3>
+          <p class="price words">联系我们</p>
           <p class="per">按年，协议定价</p>
-          <ul>
-            <li>不限任务数量</li>
-            <li>现场队长覆盖</li>
-            <li>定制集成</li>
-            <li>专属成功经理</li>
-          </ul>
+          <ul><li>不限任务数</li><li>现场队长覆盖</li><li>定制集成</li><li>专属客户成功经理</li></ul>
           <a class="btn" href="mailto:hello@vibeforce.pro?subject=VibeForce%20Platinum">联系销售</a>
         </div>
       </div>
-      <p class="small muted" style="margin-top:16px">价格由所有者设定，变更会提前通知。每项任务自身的费用会在确认之前报价，托管账户在那一刻入金。</p>
-    </section>
+      <p class="fineprint muted">价格由所有者设定，变更会提前通知。每个任务的费用在你确认前报价，届时托管资金到位。</p>
+    </div>
+  </section>
 
-    <section aria-labelledby="faq-title">
-      <h2 id="faq-title">常见问题</h2>
-      <details><summary>这个网站上的演示是真的吗？</summary><p>它是一份可以运行的演示，不是真实账户。计划器是你浏览器里的一段脚本：它读取你的任务说明，从示例执行者网络中挑人，生成任务、计划和管道。它不调用模型，也不发送数据。没有任何派遣，也没有资金流动。</p></details>
-      <details><summary>执行者是谁？</summary><p>是在自己城市接任务的经过验证的人，以及协助他们的 AI 代理。演示中的执行者是虚构的：姓名、评分和记录都为演示而编。</p></details>
-      <details><summary>什么算证据？</summary><p>带定位坐标和时间戳的照片、签收单据、文件或一段短视频，附在某个交付物上。证据包会列出每个交付物以及其中被接受的内容。</p></details>
-      <details><summary>如果某项不对怎么办？</summary><p>你指出该项并写明理由。任务保持复核状态，直到重做或进入争议；未被接受的项不会释放任何托管款项。</p></details>
-      <details><summary>VibeForce 会替场地做法律或安全检查吗？</summary><p>不会。工作许可、场地准入、许可和安全规则由客户和执行者负责。VibeForce 在执行者第一次任务之前核查身份和技能，并记录核查了什么。</p></details>
-    </section>
-  </div>
-</main>
-
-<footer class="site-foot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="index.html"><img src="../mark.svg" alt="" width="24" height="24">vibeforce</a>
-        <p class="small" style="margin-top:10px">为交付型团队而生的全球现场运维。</p>
+  <section class="bay" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="bay-head">
+        <div>
+          <p class="bayno">09 号位 · 现场笔记</p>
+          <h2 id="faq-title">常见问题</h2>
+        </div>
       </div>
-      <div>
-        <h4>产品</h4>
-        <ul>
-          <li><a href="app/">任务控制台</a></li>
-          <li><a href="#pricing">价格</a></li>
-          <li><a href="about.html">关于</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>联系</h4>
-        <ul>
-          <li><a href="mailto:hello@vibeforce.pro">hello@vibeforce.pro</a></li>
-          <li><a href="https://vibeforce.pro/">vibeforce.pro</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>语言</h4>
-        <ul>
-          <li><a href="../index.html" hreflang="en">English</a></li>
-          <li><a href="../es/" hreflang="es">Español</a></li>
-          <li><a href="index.html" hreflang="zh-Hans" aria-current="true">简体中文</a></li>
-        </ul>
+      <div class="notes">
+        <details><summary>本站的演示是真的吗？</summary><p>它是可用的演示，不是真实账户。规划器是你浏览器里的脚本：读取你的描述，从示例执行者网络中挑选，生成任务、计划和管线。它不调用模型，不发送数据。不会派出任何人，也不会动用资金。</p></details>
+        <details><summary>执行者是谁？</summary><p>在自己城市接任务的审核过的人，以及支持他们的 AI 智能体。演示和上方任务单中的示例执行者均为虚构，姓名、评分和记录都是编造的。</p></details>
+        <details><summary>什么算证据？</summary><p>带 GPS 坐标和时间戳的照片、签收单、文件或短视频，挂在某一项交付物上。证据包列出每项交付物及其被接受的内容。</p></details>
+        <details><summary>某一项有问题怎么办？</summary><p>附理由退回该项。任务保持审核状态，直到重做或提出争议；未被接受的项目，托管不放款。</p></details>
+        <details><summary>VibeForce 负责现场的法律或安全审查吗？</summary><p>不负责。工作许可、现场准入、执照和安全规定由客户和执行者负责。VibeForce 在执行者首个任务前核查其身份和技能，并记录核查内容。</p></details>
+        <details><summary>本页的画面是真实的吗？</summary><p>不是。三段视频是为本站生成的图像和动态（fal），不呈现任何真实的执行者、客户、地点或任务。</p></details>
       </div>
     </div>
-    <p class="fine">VibeForce 是 <a href="https://commandagi.com/">CommandAGI</a> 旗下公司，运行在其站点托管和记录之上。演示页面上的执行者、任务、价格和评分均为虚构。© 2026 VibeForce。</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="haz"></div>
+  <div class="big" aria-hidden="true"><span class="wm"></span></div>
+  <div class="cols">
+    <div><h2>VibeForce</h2><p>为交付型团队而生的全球现场运维。</p></div>
+    <div><h2>产品</h2><ul><li><a href="../zh/app/">任务控制台</a></li><li><a href="#pricing">价格</a></li><li><a href="../zh/about.html">关于</a></li><li><a href="../team.html">团队</a></li></ul></div>
+    <div><h2>联系</h2><ul><li><a href="mailto:hello@vibeforce.pro">hello@vibeforce.pro</a></li><li><a href="https://vibeforce.pro/">vibeforce.pro</a></li></ul></div>
+    <div><h2>语言</h2><ul><li><a href="../index.html" hreflang="en" lang="en">English</a></li><li><a href="../es/" hreflang="es" lang="es">Español</a></li><li><a href="../zh/" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a></li></ul></div>
   </div>
+  <p class="fine">VibeForce 是 <a href="https://commandagi.com/">CommandAGI</a> 旗下公司，运行在其站点托管和记录之上。演示页面上的执行者、任务、价格和评分均为虚构。视频画面为生成内容。© 2026 VibeForce。</p>
 </footer>
 </body>
 </html>
